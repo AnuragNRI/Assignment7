@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        function createTable() {
+          var rows = prompt("Enter the number of rows:");
+          var cols = prompt("Enter the number of columns:");
+          var temp = 0;
+          var table = "<table border='1'>";
+          for (var i = 0; i < rows; i++) {
+            table += "<tr>";
+            for (var j = 0; j < cols; j++) {
+              table += "<td>"+temp+"</td>";
+              temp++;
+            }
+            table += "</tr>";
+          }
+          table += "</table>";
+          document.write(table);
+        }
+      </script>
+</head>
+<body onload="createTable()" id="main">
+    
+</body>
+</html>
